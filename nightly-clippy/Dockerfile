@@ -1,5 +1,4 @@
-FROM liuchong/rustup:nightly
+FROM antifuchs/rustup-ci:00-nightly
 MAINTAINER Andreas Fuchs <asf@boinkor.net>
 
-RUN rustup update nightly
 RUN cargo install clippy --force
