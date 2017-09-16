@@ -1,5 +1,5 @@
 MAINTAINER Andreas Fuchs <asf@boinkor.net>
-FROM liuchong/rustup:nightly
+FROM liuchong/rustup:stable
 
-RUN rustup update nightly
+RUN rustup update stable
 RUN cargo install rustfmt --force
