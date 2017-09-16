@@ -1,5 +1,4 @@
-FROM liuchong/rustup:nightly
+FROM liuchong/rustup:nightly-onbuild
 MAINTAINER Andreas Fuchs <asf@boinkor.net>
 
-RUN rustup update nightly
 RUN cargo install cargo-benchcmp --force
