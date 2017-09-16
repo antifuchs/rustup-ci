@@ -1,7 +1,5 @@
 FROM liuchong/rustup:nightly
 MAINTAINER Andreas Fuchs <asf@boinkor.net>
 
-RUN rm -rf ~/.rustup/{tmp,toolchains/nightly*}
-RUN mkdir -p ~/.rustup/tmp
-
-RUN rustup install nightly
+RUN cp -a ~/.rustup ~/.rustup-new ; rm -rf ~/.rustup ; mv ~/.rustup-new ~/.rustup
+RUN rustup update nightly
