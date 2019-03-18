@@ -1,1 +1,1 @@
-Some Dockerfiles for potentially runnig rustup variations in CI
+Some Dockerfiles for runnig CI on some projects of mine
